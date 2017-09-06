@@ -1,7 +1,6 @@
 # Faceting
-
-This is a commit in the other branch
-
+This is a change I want to commit
+This s a test branch
 SolrNet supports [faceted searching](https://cwiki.apache.org/confluence/display/solr/Faceting).
 
 There are basically three kinds of facet queries:
@@ -13,6 +12,7 @@ There are basically three kinds of facet queries:
 Facet queries are issued through the `FacetQueries` property of `QueryOptions`. Then the `QueryOptions` instance is passed to the server instance.
 
 #### Facet Limits
+This is a change I do not want to commit
 There is a possibility that a field that you are using as a facet may have too many values and thus you may want to limit how many should be displayed. For this purpose we have the `Limit` property in `SolrFacetFieldQuery`.
 
 Simply set Limit to the number of values that you want Solr to return for the specific facet and you are good to go.
@@ -39,6 +39,8 @@ foreach (var facet in r.FacetFields["category"]) {
   Console.WriteLine("{0}: {1}", facet.Key, facet.Value);
 }
 ```
+
+second commit
 
 ### Date facets
 Date facet queries create facets from date ranges. Sample code:
